@@ -1,0 +1,6 @@
+#gallery {
+    position: relative;
+    background-color: white;
+    color: var(--blue);
+    min-height: 400px;
+}

@@ -1,0 +1,23 @@
+#call-to-action {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+#call-to-action-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: black;
+    opacity: 0.3;
+}
+
+#call-to-action-content {
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    inset: 0;
+}
