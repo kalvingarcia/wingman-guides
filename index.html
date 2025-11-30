@@ -23,85 +23,105 @@
                     <img src="./public//logo.svg">
                 </figure>
                 <div id="navigation-content-links">
-                    <a>Home</a>
-                    <a>Services</a>
-                    <a>About</a>
-                    <a>Gallery</a>
-                    <button>Contact</button>
+                    <a href="#hero">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#gallery">Gallery</a>
+                    <a class="button" href="mailto:">Contact</a>
                 </div>
             </div>
         </header>
         <section id="hero">
             <figure id="hero-image">
-                <img src="./public/whiskey.jpg">
+                <img src="./public/reme.jpg">
             </figure>
+            <div id="hero-overlay"></div>
             <p id="hero-content">
-                Let <span class="special-font">Wingman Guides</span> aid
-                your next adventure!
+                <span>Thank you for visiting</span>
+                <span><span class="special-font">Wingman Guides</span>!</span>
             </p>
         </section>
         <section id="services">
-            <span id="services-heading" class="heading">Services</span>
+            <span id="services-heading" class="heading">SERVICES</span>
             <div id="services-content">
                 <div class="card">
-
+                    <object type="image/svg+xml" data="./public/services/dog.svg" class="icon"></object>
+                    <span class="subheading special-font">Hunting Guide</span>
+                    <p>
+                        Enjoy a guided hunting experience built around your goals.
+                        From the first point to the final retreive, we make every 
+                        hunt safe, efficient, and unforgettable.
+                    </p>
                 </div>
                 <div class="card">
-                    
+                    <object type="image/svg+xml" data="./public/services/paw.svg" class="icon"></object>
+                    <span class="subheading special-font">Stud Services</span>
+                    <p>
+                        Our AKC-registed sires are bred for excellence. They are
+                        health tested, OFA tested, and field proven. Our dogs
+                        bring reliability and drive to every generation.
+                    </p>
                 </div>
                 <div class="card">
-                    
+                    <object type="image/svg+xml" data="./public/services/ribbon.svg" class="icon"></object>
+                    <span class="subheading special-font">AKC Judge</span>
+                    <p>
+                        Receive evaluation and mentorship from a certified AKC judge.
+                        We are dedicated to upholding the highest standard in the field.
+                    </p>
                 </div>
             </div>
-            <button>Contact Me</button>
+            <a class="button" href="mailto:">Contact Me</a>
         </section>
         <section id="about">
             <div id="about-content">
-                <div id="about-content-bio">
-                    <span id="about-heading">Hello, I'm <span class="special-font">Robert</span>!</span>
-                    <p>
-                        I started Wingman Guides with a simple goal: to make every hunt an experience
-                        worth remembering. With years of fieldwork and a lifelong passion for dogs, I've
-                        built  this seervice around reespect, precision, and care.
-                    </p>
-                    <p>
-                        Whether you're preparing for your next hunt, refining your dogs' skills, or improving
-                        your own. Wingman Guides is here to help you succeed.
-                    </p>
-                </div>
                 <figure id="about-content-pfp">
                     <img src="./public/pfp.jpg">
                 </figure>
+                <div id="about-content-bio">
+                    <div id="about-content-bio-text">
+                        <span id="about-content-bio-text-heading" class="heading">
+                            Hello, I'm <span class="special-font">Robert</span>!
+                        </span>
+                        <p>
+                            I started Wingman Guides with a simple goal: to make every hunt an experience
+                            worth remembering. With years of fieldwork and a lifelong passion for dogs, I've
+                            built  this seervice around reespect, precision, and care.
+                        </p>
+                        <p>
+                            Whether you're preparing for your next hunt, refining your dogs' skills, or improving
+                            your own. Wingman Guides is here to help you succeed.
+                        </p>
+                    </div>
+                    <a class="button" href="mailto:">Contact Me</a>
+                </div>
             </div>
-            <button>Contact Me</button>
         </section>
         <section id="call-to-action">
             <div id="call-to-action-overlay"></div>
             <div id="call-to-action-content">
                 <p id="call-to-action-content-tagline">
                     Let <span class="special-font">Wingman Guides</span> aid
-                    your next adventure!
+                    your next adventure&#33;
                 </p>
-                <button>Contact Me</button>
+                <a class="button" href="mailto:">Contact Me</a>
             </div>
         </section>
         <section id="gallery">
-            <span id="gallery-heading" class="heading">Gallery</span>
             <div id="gallery-content">
-                <!-- We'll use a script to dynamically fill this section -->
+                <span id="gallery-heading" class="heading">GALLERY</span>
+                <div id="gallery-content-dynamic">
+                    <!-- We'll use a script to dynamically fill this section -->
+                </div>
             </div>
         </section>
         <footer id="footer">
             <div id="footer-content">
                 <div id="footer-content-socials">
-
                 </div>
-                <div>
-                    <div>
-                        <span>Interested in working together?</span>
-                        <button>Contact Me</button>
-                    </div>
-                    <span>Terms of Service</span>
+                <div id="footer-content-contact">
+                    <span>Interested in working together?</span>
+                    <a class="button" href="mailto:">Contact Me</a>
                 </div>
             </div>
             <div id="footer-rule"></div>
@@ -113,6 +133,6 @@
                 </span>
             </div>
         </footer>
-        <script></script>
+        <script src="./source/populate-gallery.js"></script>
     </body>
 </html>

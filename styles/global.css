@@ -1,3 +1,44 @@
+@font-face {
+    font-family: 'Alkaline';
+    font-weight: normal;
+    src: url(../public/fonts/alkaline_regular.woff2); 
+}
+
+
+@font-face {
+    font-family: 'Alkaline';
+    font-weight: bold;
+    src: url(../public/fonts/alkaline_bold.woff2); 
+}
+
+@font-face {
+    font-family: 'Bebas Expanded';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../public/fonts/bebas_expanded_book.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: 'Bebas Expanded';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../public/fonts/bebas_expanded_bold.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: 'Bebas';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../public/fonts/bebas_regular.woff2) format(woff2); 
+}
+
+@font-face {
+    font-family: 'Bebas';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../public/fonts/bebas_bold.woff2) format(woff2); 
+}
+
 :root {
     --blue: #1a335e;
     --yellow: #ac8b2f;
@@ -17,6 +58,9 @@ html, body {
     width: 100%;
     min-height: 100%;
     color: white;
+    font-family: 'Bebas Expanded';
+    font-size: 24px;
+    overflow-x: hidden;
 }
 
 img {
@@ -32,7 +76,10 @@ figure {
     overflow: hidden;
 }
 
-button {
+.button {
+    font-family: 'Bebas Expanded';
+    font-size: 1rem;
+    font-weight: bold;
     position: relative;
     border: none;
     padding: 10px 20px;
@@ -40,7 +87,7 @@ button {
     color: white;
 }
 
-button::after {
+.button::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -48,13 +95,14 @@ button::after {
     inset: 0;
     background-color: white;
     opacity: 0;
+    transition: opacity 300ms ease-in-out;
 }
 
-button:hover::after {
+.button:hover::after {
     opacity: 0.2;
 }
 
-button:active::after {
+.button:active::after {
     opacity: 0.1;
 }
 
@@ -64,5 +112,19 @@ a {
 }
 
 .heading {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    font-family: 'Bebas';
+    font-weight: bold;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    font-family: 'Bebas';
+    font-weight: bold;
+}
+
+.special-font {
+    font-family: 'Alkaline';
+    font-weight: bold;
+    font-size: 1.5rem;
 }

@@ -1,5 +1,48 @@
 #footer {
     position: relative;
-    height: 400px;
     background-color: var(--blue);
+}
+
+#footer-content {
+    padding: 40px;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer-content-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+#footer-rule {
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    height: 1px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+#footer-accredations {
+    padding: 40px;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    #footer-accredations {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
 }

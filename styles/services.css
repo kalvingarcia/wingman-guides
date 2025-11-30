@@ -1,4 +1,5 @@
 #services {
+    scroll-margin-top: 70px;
     position: relative;
     padding: 40px;
     display: flex;
@@ -19,8 +20,28 @@
 }
 
 .card {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 450px;
+    padding: 20px;
     background-color: white;
     border-radius: 20px;
+    color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .icon {
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+.card span {
+    color: var(--yellow);
+}
+
+@media (max-width: 1000px) {
+    #services-content {
+        flex-direction: column;
+    }
 }

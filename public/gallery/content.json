@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Reme Wins",
+        "src": "./public/gallery/reme_red_ribbon.jpg"
+    },
+    {
+        "title": "Whiskey in the Wild",
+        "src": "./public/gallery/whiskey.jpg"
+    },
+    {
+        "title": "Reme Wins",
+        "src": "./public/gallery/reme_gold_ribbon.jpg"
+    },
+    {
+        "title": "Reme Wins",
+        "src": "./public/gallery/reme_ribbon.jpg"
+    },
+    {
+        "title": "Sugar Wins",
+        "src": "./public/gallery/patch_ribbon.jpg"
+    }
+]

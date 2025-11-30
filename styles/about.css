@@ -1,22 +1,33 @@
 #about {
+    scroll-margin-top: 70px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: white;
     color: var(--blue);
 }
 
 #about-content {
+    padding: 40px;
     display: flex;
     gap: 20px;
     margin: auto;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
 }
 
 #about-content-bio {
     flex: 1 0 auto;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-content-bio-text-heading .special-font {
+    color: var(--yellow);
+    font-size: 2.5rem;
+    margin-right: 10px;
 }
 
 #about-content-pfp {
@@ -28,4 +39,18 @@
 
 #about-content-pfp img {
     width: 100%;
+}
+
+@media (max-width: 1280px) {
+    #about-content {
+        flex-direction: column;
+    }
+
+    #about-content-bio {
+        width: 100%;
+    }
+
+    #about-content-pfp {
+        width: 100%;
+    }
 }

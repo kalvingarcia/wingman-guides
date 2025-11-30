@@ -1,6 +1,89 @@
 #gallery {
+    scroll-margin-top: 70px;
     position: relative;
     background-color: white;
     color: var(--blue);
     min-height: 400px;
+}
+
+#gallery-content {
+    padding: 40px;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#gallery-content-dynamic {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-image-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.gallery-image {
+    position: relative;
+    width: calc(33% - calc(0.33 * 40px));
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.gallery-image-hover {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-image-hover .gallery-image-hover-overlay {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1;
+    inset: 0;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    z-index: 1;
+}
+
+.gallery-image-hover:hover .gallery-image-hover-overlay {
+    opacity: 0.8;
+}
+
+.gallery-image-hover .gallery-image-hover-text {
+    position: relative;
+    color: white;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    z-index: 10;
+}
+
+.gallery-image-hover:hover .gallery-image-hover-text {
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .gallery-image-group {
+        flex-direction: column;
+    }
+
+    .gallery-image {
+        width: 100%;
+    }
 }
