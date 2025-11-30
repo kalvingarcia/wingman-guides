@@ -1,7 +1,8 @@
+import content from '../public/gallery/content.json';
+
 DEFAULT_CHUNK_SIZE = 3;
 
-(async (json_source) => {
-    const content = await fetch(json_source).then(response => response.json());
+(async () => {
     const chunkedContent = chunkArray(content, DEFAULT_CHUNK_SIZE);
 
     const galleryContainer = document.getElementById("gallery-content-dynamic");
@@ -14,7 +15,7 @@ DEFAULT_CHUNK_SIZE = 3;
 
         galleryContainer.appendChild(imageGroup);
     }
-})("../public/gallery/content.json");
+})();
 
 function chunkArray(array, chunkSize) {
   const chunkedArray = [];
