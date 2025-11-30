@@ -1,6 +1,6 @@
-import content from '../public/gallery/content.json';
+import content from '../public/gallery/content.json' with {type: "json"};
 
-DEFAULT_CHUNK_SIZE = 3;
+const DEFAULT_CHUNK_SIZE = 3;
 
 (async () => {
     const chunkedContent = chunkArray(content, DEFAULT_CHUNK_SIZE);
