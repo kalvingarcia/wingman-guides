@@ -14,7 +14,7 @@ DEFAULT_CHUNK_SIZE = 3;
 
         galleryContainer.appendChild(imageGroup);
     }
-})("/public/gallery/content.json");
+})("../public/gallery/content.json");
 
 function chunkArray(array, chunkSize) {
   const chunkedArray = [];
